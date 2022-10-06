@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>Books</title>
+</head>
+<body>
+<h1>Add Book</h1>
+<br>
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="title" type="text" class="validate">
+        <label for="title">Title</label>
+      </div>
+      <div class="input-field col s12">
+        <input id="author" type="text" class="validate">
+        <label for="author">Author</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="isbn" type="number" class="validate">
+        <label for="isbn">ISBN#</label>
+      </div>
+    </div>
+    <a href="#" class="btn" id="del-tasks" style="width: 100%">Submit</a>
+  </form>
+</div>
+<div class="book-list">
+  <table>
+    <tr>
+      <td><b>Title</b></td>
+      <td><b>Author</b></td>
+      <td><b>ISBN</b></td>
+    </tr>
+    <tr>
+      <td>Tõde ja Õigus</td>
+      <td>A.H Tammsaare</td>
+      <td>123789</td>
+      <td><a class="blue-text text-darken-2" href="#">X</a></td>
+    </tr>
+    <tr>
+      <td>Naksitrallid</td>
+      <td>Eno Raud</td>
+      <td>123788</td>
+      <td><a class="blue-text text-darken-2" href="#">X</a></td>
+    </tr>
+  </table>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
