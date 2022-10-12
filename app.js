@@ -15,11 +15,11 @@ function addBook(){
         let td = document.createElement("td")
         td.appendChild(document.createTextNode(inputs[i]))
         if (i === 3) {
-            const a = document.createElement('a')
+            const a = document.createElement("a")
             td = document.createElement("td")
-            a.appendChild(document.createTextNode('X'))
-            a.className = 'blue-text text-darken-2'
-            a.setAttribute('href', '#')
+            a.appendChild(document.createTextNode("X"))
+            a.className = "blue-text text-darken-2"
+            a.setAttribute("href", "#")
             td.appendChild(a)
         }
         newRow.appendChild(td)
