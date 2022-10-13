@@ -6,7 +6,7 @@ const table = document.querySelector("table")
 
 
 formSubmit.addEventListener("click", addBook)
-
+table.addEventListener("click", deleteBook)
 
 function addBook(){
     let newRow = table.insertRow()
@@ -23,5 +23,14 @@ function addBook(){
             td.appendChild(a)
         }
         newRow.appendChild(td)
+    }
+}
+
+function deleteBook(e) {
+    if (e.target.textContent === "X"){
+        console.log(e.target.parentElement.parentElement)
+        if (confirm("Are you sure you want to delete this book?")) {
+            e.target.parentElement.parentElement.remove()
+        }
     }
 }
